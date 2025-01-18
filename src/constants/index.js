@@ -19,7 +19,11 @@ import {
   mysql,
   rabbiImage,
   AhosanImage,
-  MzrImage
+  MzrImage,
+  tailwindcss,
+  aims,
+  codegenie,
+  ecom
 } from "../assets";
 
 export const navLinks = [
@@ -58,6 +62,10 @@ const technologies = [
     icon: css,
   },
   {
+    name: "Tailwind",
+    icon: tailwindcss,
+  },
+  {
     name: "PHP",
     icon: php,
   },
@@ -85,10 +93,10 @@ const technologies = [
     name: "NextJS",
     icon: nextjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "git",
     icon: git,
@@ -137,67 +145,81 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    name: "Air Force Inventory Management System (AIMS)",
+    description: "",
+    detail_description : [
+      {
+        detail : "Developed the Tender Module for the AIMS (A Government Project for Bangladesh Airforce), streamlining the process of generating complex Comparative Statement Reports (CST) for all Tender Bids by the Suppliers. This innovative solution reduces the workload of two Airmen Personnel by a significant margin, saving a week’s worth of effort to just 15 minutes, with a 100% accuracy rate."
+      },
+      {
+        detail : "Developed the Procurement Module for the AIMS, streamlining the process of maintain optimal inventory levels. The process ensures that resources are available when needed while overstocking or understocking. This typically includes Purchase Planning, Supplier Management, Contracts, Purchase Orders and Authority Approval Process"
+      }, 
+      {
+        detail : "Developed Product & Budget Module, Streamlining the process of maintain Stock management and Real time Product Stock Location"
+      }
+    ],
     tags: [
+      {
+        name: "bootstrap",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "oracle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "laravel",
+        color: "pink-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: aims,
+    source_code_link: "",
   },
   {
-    name: "Job IT",
+    name: "Codegenie",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed an innovative in-house code generation tool, Codegenie, which significantly reduces repetitive coding processes by automatically generating optimized code for every developers in the organisation. The tool also includes various utility functions to optimize and streamline the development process, resulting in increased efficiency and productivity, reducing an hour or two worth of effort to just 5 to 10 minutes with great reliability.",
     tags: [
       {
-        name: "react",
+        name: "bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "laravel",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: codegenie,
+    source_code_link: "/",
   },
   {
-    name: "Trip Guide",
+    name: "Feature BD",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A sleek and user-friendly B2C E-commerce platform specializing in cosmetic products. Features include intuitive navigation, detailed product listings, secure checkout, and seamless user experience to enhance online shopping. Designed to cater directly to customers with a focus on aesthetics and functionality.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "expressjs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
+      {
+        name: "shadcn",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: ecom,
+    source_code_link: "https://www.featurebd.com",
   },
 ];
 

@@ -4,6 +4,7 @@ import { slideIn } from "../utils/motion";
 import { styles } from "../styles";
 import { useRef, useState } from "react";
 import { EarthCanvas } from "./canvas";
+import { Facebook, Github, Gitlab, Linkedin } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -53,14 +54,31 @@ const Contact = () => {
 
   return (
     <>
+      <p className={styles.sectionSubText}>Get in touch</p>
+      <h3 className={styles.sectionHeadText}>Contact</h3>
+      <div className="flex gap-4 overflow-hidden">
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[1] flex justify-center items-center gap-8 bg-black-100 p-6 rounded-2xl">
+          <div onClick={() => window.open('https://gitlab.com/Mahim67', "_blank")} className="w-20 h-20 bg-blue-900 rounded-full flex justify-center items-center cursor-pointer">
+            <Gitlab size={40} />
+          </div>
+          <div onClick={() => window.open('https://github.com/mahim67', "_blank")} className="w-20 h-20 bg-green-800 rounded-full flex justify-center items-center cursor-pointer">
+            <Github size={40} />
+          </div>
+          <div onClick={() => window.open('https://www.linkedin.com/in/mohiuddin-mahim-589876240', "_blank")} className="w-20 h-20 bg-pink-900 rounded-full flex justify-center items-center cursor-pointer">
+            <Linkedin size={40} />
+          </div>
+          <div onClick={() => window.open('https://www.facebook.com/mohiuddenkhan.mahim', "_blank")} className="w-20 h-20 bg-indigo-600 rounded-full flex justify-center items-center cursor-pointer">
+            <Facebook size={40} />
+          </div>
+        </motion.div>
+      </div>
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact</h3>
-
           <form
             ref={formRef}
             onSubmit={handleSubmit}

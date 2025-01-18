@@ -10,10 +10,10 @@ const Experience = () => {
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText} mt-10`}>What I Have done so far</p>
+        <p className={`${styles.sectionSubText} mt-2`}>What I Have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
-      <div className="mt-20 flex flex-col">
+      <div className="mt-10 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
