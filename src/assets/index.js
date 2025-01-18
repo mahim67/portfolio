@@ -24,6 +24,7 @@ import php from "./tech/php.png";
 import laravel from "./tech/laravel.png";
 import mysql from "./tech/mysql.png";
 import oracle from "./tech/oracle.png";
+import nextjs from "./tech/nextjs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,6 +35,10 @@ import pondit from "./company/pondit.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import rabbiImage from "./testimonial-users/rabbi.png";
+import AhosanImage from "./testimonial-users/ahosan.png";
+import MzrImage from "./testimonial-users/mzr.png";
 
 export {
   logo,
@@ -69,4 +74,8 @@ export {
   laravel,
   mysql,
   oracle,
+  nextjs,
+  rabbiImage,
+  AhosanImage,
+  MzrImage,
 };

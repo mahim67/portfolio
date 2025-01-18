@@ -6,6 +6,7 @@ import {
   css,
   reactjs,
   redux,
+  nextjs,
   git,
   meta,
   pondit,
@@ -15,7 +16,10 @@ import {
   php,
   laravel,
   oracle,
-  mysql
+  mysql,
+  rabbiImage,
+  AhosanImage,
+  MzrImage
 } from "../assets";
 
 export const navLinks = [
@@ -78,6 +82,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "NextJS",
+    icon: nextjs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -90,10 +98,10 @@ const technologies = [
 const experiences = [
   {
     title: "Full stack Developer",
-    company_name: "Pondit Informatix LTD",
+    company_name: "Pondit Limited",
     icon: pondit,
     iconBg: "#E6DEDD",
-    date: "June 2021 - Present",
+    date: "April 2021 - Present",
     points: [
       "Developing and maintaining web applications using PHP, Laravel and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -105,28 +113,25 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "As a team player, he collaborates effectively and consistently ensures the success of our projects. His technical expertise and dedication make him an invaluable part of the team.",
+    name: "Mian Zadid Rusdid",
+    designation: "CTA & Lead Trainer",
+    company: "PONDIT",
+    image: MzrImage
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    testimonial: "As a team member, he stands out for his quick delivery and outstanding ability to fulfill user requirements. His expertise and collaborative approach make him a valuable asset to any team.",
+    name: "Ahosan Habib",
+    designation: "Senior Software Engineer",
+    company: "Portonics Limited",
+    image: AhosanImage
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    testimonial: "I've never met a web developer who truly cares about their client's success like Mahim.",
+    name: "Rabbi Ahamed",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Isotope IT Ltd",
+    image: rabbiImage,
   },
 ];
 

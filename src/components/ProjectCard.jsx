@@ -6,8 +6,8 @@ import { github } from "../assets";
 export default function ProjectCard(props) {
   const { index, name, description, tags, image, source_code_link } = props;
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary p-5 rounded-2xl sm:2-[360px] w-full">
+    <motion.div variants={fadeIn("up", "spring", index * 0.05, 0.25)}>
+        <Tilt options={{ max: 25, scale: 1, speed: 250 }} className="bg-tertiary p-5 rounded-2xl sm:2-[360px] w-full">
             <div className="relative w-full h-[230px]">
                 <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
                 <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
